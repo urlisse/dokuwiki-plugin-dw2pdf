@@ -1,0 +1,147 @@
+body {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  font-weight: 300;
+  color: #565657;
+}
+
+a {
+  color: #3e92ba;
+}
+a:hover, a:active {
+  color: #d12a2e;
+}
+a:hover {
+  text-decoration: none;
+}
+
+div.level1, div.level2, div.level3, div.level4, div.level5, div.level6 {
+  margin-top: 0;
+}
+
+.h1,.h2,.h3,.h4,.h5,.h6,
+h1,h2,h3,h4,h5,h6 {
+  margin-bottom: 0;
+}
+
+h1, h1 a {
+  font-size: 21pt;
+  font-weight: bold;
+  /* color: #565657 */
+  color: #da7e27;
+  text-transform: uppercase;
+}
+
+
+h2, h2 a {
+  font-size: 18pt;
+  font-weight: bold;
+  color: #3e92ba;
+  text-transform: uppercase;
+}
+
+h3, h3 a {
+  font-size: 14pt;
+  font-weight: bold;
+  color: #da7e27;
+  text-transform: uppercase;
+}
+
+h4, h4 a {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #565657;
+  text-transform: uppercase;
+}
+
+h5, h5 a {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #565657;
+  text-transform: none;
+}
+
+h6 {
+  font-size: 12pt;
+  font-weight: bold;
+  color: #565657;
+  margin-bottom:0;
+  text-transform: none;
+}
+
+.table table.table {
+  /* ne fonctionne pas */
+  border-width: 1px; 
+  border-style: solid; 
+  border-color: #D5C9B3;
+}
+
+pre {
+  font-size: 10pt;
+  background-color: #D5C9B3;
+}
+
+del {
+  color: #999;
+}
+
+.content {
+}
+
+img.medialeft {
+  /* ne fonctionne pas */
+  float: left;
+  margin: 15px 5px 5px 5px;
+}
+
+img.mediaright {
+  /* ne fonctionne pas */
+  float: right;
+  margin: 5px 5px 5px 15px;
+}
+
+/* Citation */
+
+.citation {
+  margin-top: 30px;
+  border-top: 2px solid #D5C9B3;
+}
+
+
+/* Headers */
+
+table.header-first {
+}
+
+table.header-page {
+}
+
+/* Footers */
+
+table.footer-sig {
+  font-size: 10pt;
+}
+
+table.footer-sig .coord-left {
+  width: 62px;
+}
+
+table.footer-sig .coord-email {
+  width: 175px;
+}
+
+table.footer-sig .coord-tel {
+  width: 175px;
+}
+
+table.footer-sig .coord-web {
+}
+
+table.footer-sig .coord-right {
+}
+
+table.footer-page {
+  clear: both;
+  font-size: 10pt;
+}
+

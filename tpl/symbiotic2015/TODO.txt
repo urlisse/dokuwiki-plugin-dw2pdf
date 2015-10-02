@@ -1,0 +1,4 @@
+
+* Certaines images ne s'affichent pas (ex: sur la page syntaxe wiki -- problème d'accès au wiki?) 
+* Alignement des images ignoré (examiner de près le html + css utilisé)
+* Couleur des tableaux inchangé
