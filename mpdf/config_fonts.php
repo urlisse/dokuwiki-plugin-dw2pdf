@@ -7,6 +7,7 @@
 // e.g. on Windows: define("_MPDF_SYSTEM_TTFONTS", 'C:/Windows/Fonts/');
 
 //if (!defined("_MPDF_SYSTEM_TTFONTS")) { define("_MPDF_SYSTEM_TTFONTS", 'C:/xampp/htdocs/common/ttffonts/'); }
+if (!defined("_MPDF_SYSTEM_TTFONTS")) { define("_MPDF_SYSTEM_TTFONTS", '/usr/share/fonts/'); }
 
 // Optionally set font(s) (names as defined below in $this->fontdata) to use for missing characters
 // when using useSubstitutions. Use a font with wide coverage - dejavusanscondensed is a good start
@@ -38,6 +39,7 @@ Generic substitutions (i.e. to a sans-serif or serif font) are set
 by including the font-family in e.g. $this->sans_fonts below
 */
 $this->fonttrans = array(
+	'lato' => 'latoregular',
 	'times' => 'timesnewroman',
 	'courier' => 'couriernew',
 	'trebuchet' => 'trebuchetms',
@@ -83,6 +85,12 @@ starting at 1, as they appear in the .ttc file e.g.
 */
 
 $this->fontdata = array(
+	"lato" => array(
+		'R' => "Lato-Regular.ttf",
+		'B' => "Lato-Bold.ttf",
+		'I' => "Lato-Italic.ttf",
+		'BI' => "Lato-BoldItalic.ttf",
+		),
 	"dejavusanscondensed" => array(
 		'R' => "DejaVuSansCondensed.ttf",
 		'B' => "DejaVuSansCondensed-Bold.ttf",
@@ -318,7 +326,7 @@ $this->BMPonly = array(
 //     (Otherwise the order is irrelevant)
 // Use the mPDF font-family names i.e. lowercase and no spaces (after any translations in $fonttrans)
 // Always include "sans-serif", "serif" and "monospace" etc.
-$this->sans_fonts = array('dejavusanscondensed','sans','sans-serif','cursive','fantasy','dejavusans','freesans','liberationsans', 
+$this->sans_fonts = array('lato', 'dejavusanscondensed','sans','sans-serif','cursive','fantasy','dejavusans','freesans','liberationsans', 
 				'arial','helvetica','verdana','geneva','lucida','arialnarrow','arialblack','arialunicodems',
 				'franklin','franklingothicbook','tahoma','garuda','calibri','trebuchet','lucidagrande','microsoftsansserif',
 				'trebuchetms','lucidasansunicode','franklingothicmedium','albertusmedium','xbriyaz','albasuper','quillscript',
@@ -335,7 +343,5 @@ $this->serif_fonts = array('dejavuserifcondensed','serif','dejavuserif','freeser
 $this->mono_fonts = array('dejavusansmono','mono','monospace','freemono','liberationmono','courier', 'ocrb','ocr-b','lucidaconsole',
 				'couriernew','monotypecorsiva'
 );
-
-
 
 ?>
