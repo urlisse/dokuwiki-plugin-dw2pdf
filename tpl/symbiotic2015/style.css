@@ -71,6 +71,8 @@ h6 {
 
 .table table.table {
   /* ne fonctionne pas */
+  margin-top: 5px;
+  margin-bottom: 5px;
   border-width: 1px; 
   border-style: solid; 
   border-color: #D5C9B3;
@@ -103,45 +105,39 @@ img.mediaright {
 /* Citation */
 
 .citation {
+  page-break-inside: avoid;
   margin-top: 30px;
-  border-top: 2px solid #D5C9B3;
+  /* border-top: 2px solid #d5c9b3; */
 }
 
-
-/* Headers */
+/* Headers & footers */
 
 table.header-first {
 }
 
-table.header-page {
-}
-
-/* Footers */
-
-table.footer-sig {
-  font-size: 10pt;
-}
-
-table.footer-sig .coord-left {
-  width: 62px;
-}
-
-table.footer-sig .coord-email {
-  width: 175px;
-}
-
-table.footer-sig .coord-tel {
-  width: 175px;
-}
-
-table.footer-sig .coord-web {
-}
-
-table.footer-sig .coord-right {
-}
-
-table.footer-page {
+table.pager {
   clear: both;
   font-size: 10pt;
 }
 
+table.sig {
+  font-size: 10pt;
+}
+
+table.sig .coord-left {
+  width: 62px;
+}
+
+table.sig .coord-email {
+  width: 175px;
+}
+
+table.sig .coord-tel {
+  width: 175px;
+}
+
+table.sig .coord-web {
+}
+
+table.sig .coord-right {
+}
