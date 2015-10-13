@@ -1,4 +1,6 @@
 
-* Certaines images ne s'affichent pas (ex: sur la page syntaxe wiki -- problème d'accès au wiki?) 
-* Alignement des images ignoré (examiner de près le html + css utilisé)
-* Couleur des tableaux inchangé
+* Some images don't show (wiki permission issue?)
+* Text doesn't float around aligned images 
+* Stylesheets don't apply on table, th, td fields
+* Stylesheets don't apply on pre fields
+* Stylesheets don't apply on dl, dt, dd fields

@@ -91,6 +91,13 @@ $this->fontdata = array(
 		'I' => "Lato-Italic.ttf",
 		'BI' => "Lato-BoldItalic.ttf",
 		),
+	"latolight" => array(
+		'R' => "Lato-Light.ttf",
+		),
+	"latoblack" => array(
+		'R' => "Lato-Black.ttf",
+		'B' => "Lato-Black.ttf",
+		),
 	"dejavusanscondensed" => array(
 		'R' => "DejaVuSansCondensed.ttf",
 		'B' => "DejaVuSansCondensed-Bold.ttf",
@@ -343,5 +350,7 @@ $this->serif_fonts = array('dejavuserifcondensed','serif','dejavuserif','freeser
 $this->mono_fonts = array('dejavusansmono','mono','monospace','freemono','liberationmono','courier', 'ocrb','ocr-b','lucidaconsole',
 				'couriernew','monotypecorsiva'
 );
+
+
 
 ?>

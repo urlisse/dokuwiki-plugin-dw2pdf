@@ -1,5 +1,5 @@
 body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato Light", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12pt;
   font-weight: 300;
   color: #565657;
@@ -25,7 +25,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1, h1 a {
-  font-size: 21pt;
+  font-family: "Lato Black";
+  font-size: 20pt;
   font-weight: bold;
   /* color: #565657 */
   color: #da7e27;
@@ -34,72 +35,154 @@ h1, h1 a {
 
 
 h2, h2 a {
-  font-size: 18pt;
+  font-family: "Lato Black";
+  font-size: 16pt;
   font-weight: bold;
   color: #3e92ba;
   text-transform: uppercase;
 }
 
 h3, h3 a {
-  font-size: 14pt;
+  font-family: "Lato Black";
+  font-size: 16pt;
   font-weight: bold;
   color: #da7e27;
   text-transform: uppercase;
 }
 
 h4, h4 a {
-  font-size: 12pt;
+  font-family: "Lato Black";
+  font-size: 16pt;
   font-weight: bold;
   color: #565657;
   text-transform: uppercase;
 }
 
 h5, h5 a {
+  font-family: "Lato Black";
   font-size: 12pt;
   font-weight: bold;
   color: #565657;
-  text-transform: none;
+  text-transform: uppercase;
 }
 
 h6 {
+  font-family: "Lato Black";
   font-size: 12pt;
   font-weight: bold;
   color: #565657;
-  margin-bottom:0;
+  margin-bottom: 0;
   text-transform: none;
 }
 
+/* table -- ces styles ne fonctionnent pas */
 .table table.table {
-  /* ne fonctionne pas */
   margin-top: 5px;
   margin-bottom: 5px;
   border-width: 1px; 
   border-style: solid; 
   border-color: #D5C9B3;
 }
-
-pre {
+article .table table.table {
   font-size: 10pt;
-  background-color: #D5C9B3;
+}
+
+article .table table.table th,
+article .table table.table td {
+  padding: 5px;
+}
+
+article .table > tbody > tr > td, 
+article .table > tbody > tr > th, 
+article .table > tfoot > tr > td, 
+article .table > tfoot > tr > th, 
+article .table > thead > tr > td, 
+article .table > thead > tr > th {
+  border-color: #d5c9b3;
+}
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+  background-color: #f3f0d9;
+}
+
+article pre {
+  font-family: "Deja Vu Sans Mono";
+  font-size: 10pt;
+  border-color: #d5c9b3;
+  background-color: #f3f0d9;
+  /* background-color: #D5C9B3; */
 }
 
 del {
   color: #999;
 }
 
+article code {
+  font-family: "Deja Vu Sans Mono";
+  font-size: 10pt;
+  color: #000;
+  background-color: transparent;
+}
+
+article blockquote {
+  font-size: 12pt;
+  padding: 5px 10px;
+  border-color: #d5c9b3;
+}
+
 .content {
 }
 
+article dl.plugin_definitionlist {
+  border-bottom: none;
+  font-size: 12pt;
+}
+article dl.plugin_definitionlist dt {
+  font: "Lato Black";
+  font-weight: bold;
+}
+article dl.plugin_definitionlist dt span.term {
+  float: none;
+  width: auto;
+}
+article dl.plugin_definitionlist dd + dt {
+  border-top: none;
+}
+article dl.plugin_definitionlist dd {
+  list-style: none;
+  margin: 0px 0px 0px 1em;
+  padding-left: 0px 0px 0px 0px;
+  background: none;
+}
+
 img.medialeft {
-  /* ne fonctionne pas */
   float: left;
   margin: 15px 5px 5px 5px;
 }
 
 img.mediaright {
-  /* ne fonctionne pas */
   float: right;
   margin: 5px 5px 5px 15px;
+}
+
+/* wraps and other boxes */
+
+
+.dokuwiki div.wrap_info,
+.dokuwiki .wrap_important,
+.dokuwiki div.wrap_download {
+  /* background-color: #f3f0d9; */
+  background-color: transparent;
+  border: 2px solid #d5c9b3;
+  border-radius: 15px;
+}
+
+.dokuwiki div.wrap_download {
+  /* border-color: #3e92ba; */
+}
+.dokuwiki .wrap_info {
+}
+.dokuwiki .wrap_important {
+  border-color: #da7e27;
 }
 
 /* Citation */
