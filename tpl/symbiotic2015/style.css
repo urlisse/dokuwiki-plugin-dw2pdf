@@ -5,6 +5,7 @@ body {
   color: #565657;
 }
 
+
 a {
   color: #3e92ba;
 }
@@ -26,7 +27,7 @@ h1,h2,h3,h4,h5,h6 {
 
 h1, h1 a {
   font-family: "Lato Black";
-  font-size: 20pt;
+  font-size: 21pt;
   font-weight: bold;
   /* color: #565657 */
   color: #da7e27;
@@ -36,7 +37,7 @@ h1, h1 a {
 
 h2, h2 a {
   font-family: "Lato Black";
-  font-size: 16pt;
+  font-size: 18pt;
   font-weight: bold;
   color: #3e92ba;
   text-transform: uppercase;
@@ -52,23 +53,24 @@ h3, h3 a {
 
 h4, h4 a {
   font-family: "Lato Black";
-  font-size: 16pt;
+  font-size: 14pt;
   font-weight: bold;
   color: #565657;
   text-transform: uppercase;
 }
 
 h5, h5 a {
-  font-family: "Lato Black";
+  font-family: "Lato";
   font-size: 12pt;
   font-weight: bold;
   color: #565657;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 h6 {
-  font-family: "Lato Black";
+  font-family: "Lato Light";
   font-size: 12pt;
+  font-style: italic;
   font-weight: bold;
   color: #565657;
   margin-bottom: 0;
@@ -76,6 +78,7 @@ h6 {
 }
 
 /* table -- ces styles ne fonctionnent pas */
+/*
 .table table.table {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -83,6 +86,7 @@ h6 {
   border-style: solid; 
   border-color: #D5C9B3;
 }
+*/
 article .table table.table {
   font-size: 10pt;
 }
@@ -92,24 +96,22 @@ article .table table.table td {
   padding: 5px;
 }
 
+/*
 article .table > tbody > tr > td, 
 article .table > tbody > tr > th, 
+*/
 article .table > tfoot > tr > td, 
 article .table > tfoot > tr > th, 
 article .table > thead > tr > td, 
 article .table > thead > tr > th {
-  border-color: #d5c9b3;
+  border-color: #565657;
 }
 .table-striped > tbody > tr:nth-of-type(2n+1) {
-  background-color: #f3f0d9;
+  background-color: #d5c9b3;
 }
 
 article pre {
-  font-family: "Deja Vu Sans Mono";
-  font-size: 10pt;
-  border-color: #d5c9b3;
-  background-color: #f3f0d9;
-  /* background-color: #D5C9B3; */
+  background-color: #d5c9b3; 
 }
 
 del {
@@ -136,8 +138,8 @@ article dl.plugin_definitionlist {
   border-bottom: none;
   font-size: 12pt;
 }
-article dl.plugin_definitionlist dt {
-  font: "Lato Black";
+article dl.plugin_definitionlist dt, dt {
+  font: "Lato";
   font-weight: bold;
 }
 article dl.plugin_definitionlist dt span.term {
@@ -170,7 +172,6 @@ img.mediaright {
 .dokuwiki div.wrap_info,
 .dokuwiki .wrap_important,
 .dokuwiki div.wrap_download {
-  /* background-color: #f3f0d9; */
   background-color: transparent;
   border: 2px solid #d5c9b3;
   border-radius: 15px;
